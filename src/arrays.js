@@ -13,4 +13,9 @@ describe('Old (mutable) array functions', () => {
     array.reverse();
     assert.deepStrictEqual(array, [3, 2, 1]);
   })
+
+  it('should remove the element at index 1', () => {
+    array.splice(1, 1);
+    assert.deepStrictEqual(array, [3, 1]);
+  })
 })
