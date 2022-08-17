@@ -29,4 +29,11 @@ describe('New (immutable) array functions', () => {
     assert.deepStrictEqual(sortedArray, [1, 2, 3]);
     checkIfSteelImmutable();
   });
+
+  it('[toSpliced]', () => {
+    const splicedArray = originalArray.toSpliced(1, 2);
+   
+    assert.deepStrictEqual(splicedArray, [1]);
+    checkIfSteelImmutable();
+  });
 });
