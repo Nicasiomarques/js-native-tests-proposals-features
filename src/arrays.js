@@ -19,3 +19,14 @@ describe('Old (mutable) array functions', () => {
     assert.deepStrictEqual(array, [3, 1]);
   })
 })
+
+describe('New (immutable) array functions', () => {
+  const originalArray = [1, 3, 2];
+  const checkIfSteelImmutable = () => assert.deepStrictEqual(originalArray, [1, 3, 2]);
+  it('[toSorted]', () => {
+    const sortedArray = originalArray.toSorted();
+   
+    assert.deepStrictEqual(sortedArray, [1, 2, 3]);
+    checkIfSteelImmutable();
+  });
+});
