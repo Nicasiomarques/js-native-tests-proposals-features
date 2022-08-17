@@ -8,4 +8,9 @@ describe('Old (mutable) array functions', () => {
     array.sort();
     assert.deepStrictEqual(array, [1, 2, 3]);
   })
+
+  it('should reverse the array', () => {
+    array.reverse();
+    assert.deepStrictEqual(array, [3, 2, 1]);
+  })
 })
