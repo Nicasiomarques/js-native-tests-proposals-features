@@ -1,0 +1,19 @@
+{
+  "name": "react-native",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "node --no-warnings index.mjs | tap-spec"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^18.7.6",
+    "tap-spec": "^5.0.0"
+  },
+  "dependencies": {
+    "core-js": "^3.24.1"
+  }
+}
