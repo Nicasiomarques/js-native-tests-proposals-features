@@ -36,4 +36,11 @@ describe('New (immutable) array functions', () => {
     assert.deepStrictEqual(splicedArray, [1]);
     checkIfSteelImmutable();
   });
+
+  it('[toReversed]', () => {
+    const reversedArray = originalArray.toReversed();
+
+    assert.deepStrictEqual(reversedArray, [2, 3, 1]);
+    checkIfSteelImmutable();
+  });
 });
