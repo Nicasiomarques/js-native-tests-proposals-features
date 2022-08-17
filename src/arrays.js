@@ -43,4 +43,11 @@ describe('New (immutable) array functions', () => {
     assert.deepStrictEqual(reversedArray, [2, 3, 1]);
     checkIfSteelImmutable();
   });
+
+  it('[with]', () => {
+    const sortedArray = originalArray.with(0, 10).with(1, 20).with(2, 30);
+   
+    assert.deepStrictEqual(sortedArray, [10, 20, 30]);
+    checkIfSteelImmutable();
+  });
 });
