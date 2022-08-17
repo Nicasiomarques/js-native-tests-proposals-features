@@ -13,4 +13,10 @@ import assert from "node:assert";
 
       assert.deepStrictEqual(GroupEvenAndOdd, { even: [0, 2, 4], odd: [1, 3] });
     });
+
+    it("New way", () => {
+      const GroupEvenAndOdd = arrayBase.group(num => (num % 2 === 0 ? "even" : "odd"));
+
+      assert.deepEqual(GroupEvenAndOdd, { even: [0, 2, 4], odd: [1, 3] });
+    });
   });
